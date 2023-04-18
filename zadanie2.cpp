@@ -1,14 +1,14 @@
-   #include <iostream>
+#include <iostream>
 using namespace std;
-int main() {
-int liczba ;
-cout<<"podaj liczbę"<<endl;
-cin>>liczba;
-cout << "Liczba = " << liczba << endl;
-string znak;
-if (liczba < 0) znak = "1";
-else if(liczba>=0) znak="0";
-else znak="blad";
-cout << "funkcja: " << znak << endl;
-return 0;
+
+int main()
+{
+  float number;
+  cout << "Podaj liczbe, jesli jest dodatnia lub zerowa wypisze 0 a jesli ujemna to 1" << endl;
+  cin >> number; 
+  if(!number) cout << "musisz podac liczbe" << endl;
+  else if(number <= 0) cout << 0 << endl;
+  else if(number >  0) cout << 1 << endl;
+
+  return 0;
 }
